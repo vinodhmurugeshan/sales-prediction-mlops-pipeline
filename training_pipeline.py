@@ -72,6 +72,6 @@ def train_and_evaluate(
 
 if __name__ == "__main__":
     metrics = train_and_evaluate()
-    print("Model trained and saved to:", DEFAULT_MODEL_PATH)
+    print("Model trained and saved to this default:", DEFAULT_MODEL_PATH)
     print("Training metrics:")
     print(json.dumps(metrics, indent=2))

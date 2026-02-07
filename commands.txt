@@ -2,10 +2,7 @@ python -m venv venv
 
 powershell -ExecutionPolicy Bypass -File .\venv\Scripts\Activate.ps1
 
-
 .\venv\Scripts\Activate.ps1
-
-
 
 python train_model.py
 
@@ -20,3 +17,43 @@ docker run -p 8000:8000 sales-app:latest
 
 uvicorn app:app --reload --host 0.0.0.0 --port 8000
 
+-----------------------
+git init
+
+git status
+
+git add .
+
+git commit -m "First Commit from Local Machine"
+
+git log
+
+then login to git hub and create a repo with the same name as the project folder in local machine
+
+git remote add origin https://github.com/vinodhmurugeshan/sales-prediction-mlops-pipeline.git
+
+git branch -M main
+
+git push -u origin main
+
+then go to actions tab in git and add the yml files by uploading/copy paste the codes.
+
+to connect the repo with docker go to settings ->secrets and variables -> actions -> New repository secret ->create name as DOCKERHUB_USERNAME and secret is your username in dockerhub "vinodhmurugeshan"
+
+then add new secret DOCKERHUB_TOKEN follow below steps
+
+login to dockerhub ->click on user name ->account settings ->personal access token ->generate new token -> add that secret key in DOCKERHUB_TOKEN and add secret
+
+once the token are setup then we are established the entire pipeline 
+
+git pull -> the .github folder will be seen on the project folder
+--------------------------------------------------------------
+Now making some modifications on the scripts and testing the pipeline whether its seemless or not
+
+i made small change in training_pipeline in print statement
+
+git status
+
+git add .
+
+git commit -m "Second Commit"
