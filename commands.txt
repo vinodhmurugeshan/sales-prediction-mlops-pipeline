@@ -57,3 +57,5 @@ git status
 git add .
 
 git commit -m "Second Commit"
+
+git push ->go to actions in github where you can see the progress of CI/CD
