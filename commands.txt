@@ -38,7 +38,7 @@ git push -u origin main
 
 then go to actions tab in git and add the yml files by uploading/copy paste the codes.
 
-to connect the repo with docker go to settings ->secrets and variables -> actions -> New repository secret ->create name as DOCKERHUB_USERNAME and secret is your username in dockerhub "vinodhmurugeshan"
+to connect the repo with docker go to settings in github ->secrets and variables -> actions -> New repository secret ->create name as DOCKERHUB_USERNAME and secret is your username in dockerhub "vinodhmurugeshan"
 
 then add new secret DOCKERHUB_TOKEN follow below steps
 
@@ -46,7 +46,7 @@ login to dockerhub ->click on user name ->account settings ->personal access tok
 
 once the token are setup then we are established the entire pipeline 
 
-git pull -> the .github folder will be seen on the project folder
+git pull -> the .github folder will be seen in the project folder
 --------------------------------------------------------------
 Now making some modifications on the scripts and testing the pipeline whether its seemless or not
 
