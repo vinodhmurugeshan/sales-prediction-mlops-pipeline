@@ -59,3 +59,11 @@ git add .
 git commit -m "Second Commit"
 
 git push ->go to actions in github where you can see the progress of CI/CD
+
+to check the continuous pipeline we can given 3 possibilities
+
+1. Manual Trigger
+2. Some change in the input data
+3. Schedule Trigger
+
+you can see the image in docker hub go to My hub -> repositories -> we can find the image by the name we have given in cd.yml
